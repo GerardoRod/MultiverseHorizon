@@ -1,0 +1,24 @@
+
+$multiverse-primary:#5A2478;
+$multiverse-light-accent: #818BAD;
+$multiverse-light-shades: #F5F6F4;
+$multiverse-success: #F5F6F4;
+$multiverse-dark-accent:#AF4C60;
+$multiverse-dark-shades:#1C121C;
+$multiverse-info: #50855C;
+
+
+// The warn palette is optional (defaults to red).
+$multiverse-warn: #F44336;
+
+
+  color: (
+    primary: $multiverse-primary,
+    accent: $multiverse-light-accent,
+    lshades: $multiverse-light-shades,
+    warn: $multiverse-warn,
+    success: $multiverse-success,
+    info: $multiverse-info,
+    daccent: $multiverse-dark-accent,
+    dshades: $multiverse-dark-shades,
+  )

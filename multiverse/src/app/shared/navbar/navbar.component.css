@@ -1,0 +1,23 @@
+
+.spacer{
+    flex: 1 1 auto
+}
+
+.toolbar{
+  /* Horizon Flow */
+padding-left: 10em;
+padding-top: 3em;
+padding-right: 10em;
+}
+
+
+.button{
+    font-size: 0.8em;
+    border-radius: 50px;
+    min-width: fit-content;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
