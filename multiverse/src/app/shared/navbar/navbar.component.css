@@ -1,8 +1,9 @@
 .toolbar{
-  /* Horizon Flow */
-padding-left: 10em;
+    /* Horizon Flow */
+min-width: fit-content;
+margin-left: 8vw;
 padding-top: 3em;
-padding-right: 10em;
+margin-right: 8vw;
 }
 
 
@@ -20,4 +21,9 @@ padding-right: 10em;
 
 .text{
     color: #1C121C
+}
+
+.nb__button{
+
+
 }
