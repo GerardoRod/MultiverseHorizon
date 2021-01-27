@@ -1,6 +1,26 @@
 
-<mat-grid-list cols="2" rowHeight="2:1"  style="margin-top: 1.3vh;">
-    <mat-grid-tile style="min-width: fit-content;">
+<mat-grid-list *ngIf="!mobile" cols="2"  rowHeight="2:1"  style="margin-top: 1.3vh;">
+    <mat-grid-tile>
+        <section class="mat-typography">
+            <div class="row">
+                <h2 class="mat-small mb">Translating your needs into products.</h2>
+                    <h1 class="mat-display-2 h__1">We make your business 
+                    <br>
+                    available for the 
+                    <br>
+                    world.</h1>
+                    <img src="../../assets/img/Vector_1.svg" alt="vector" class="line1">
+            </div>
+            <button mat-raised-button color="primary" class="btn-c">Contact Us</button> 
+        </section>
+    </mat-grid-tile>  
+    <mat-grid-tile>
+        <img src="../../assets/img/img2.svg" alt="img1" class="img1">
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list *ngIf="mobile" cols="2"  rowHeight="2:1"  style="margin-top: 1.3vh;">
+    <mat-grid-tile>
         <section class="mat-typography">
             <div class="row">
                 <h2 class="mat-small mb">Translating your needs into products.</h2>
