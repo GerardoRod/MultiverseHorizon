@@ -47,10 +47,16 @@ mat-nav-list.secondary-nav a:hover{
         display: none;
     }
 
+    mat-toolbar{
+
+        padding: 0 8% 0 8%;
+    }
+
     mat-toolbar  mat-nav-list{
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
+
     }
 
 
