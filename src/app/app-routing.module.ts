@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 const routes: Routes = [
-    {path: 'navBar', component: NavbarComponent},
-    {path: '**', pathMatch: 'full', redirectTo: 'navBar'},
+    {path: 'home', component: HomeComponent },
+    {path: 'navbar', component: NavbarComponent },
+    {path: '**', pathMatch: 'full', redirectTo: 'home'},
 ];
 
 @NgModule({

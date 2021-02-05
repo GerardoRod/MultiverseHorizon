@@ -11,11 +11,15 @@ import { map, shareReplay } from 'rxjs/operators';
 
 export class NavbarComponent implements OnInit {
 
+  mobile = false;
 
 
   constructor() { }
 
   ngOnInit(): void {
+    if (window.screen.width <= 760) {
+      this.mobile = true;
+    }
   }
 
 }
