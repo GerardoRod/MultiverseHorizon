@@ -1,21 +1,33 @@
+<mat-sidenav-container fullscreen>
+  
+  <mat-toolbar>   
+    <a class="logo" routerLink="#">Multiverse Horizon</a>
+    
+      <mat-nav-list class="primary-nav">
+        <a mat-button routerLink="#">Contact Us</a>
+        <a mat-raised-button class="nav-btn-cta" routerLink="#" color="primary" >Get a Quote</a>
+      </mat-nav-list>
+    
+    <button class="mobile-menu"
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="drawer.toggle()"
+    >
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+   </mat-toolbar>
 
+     <mat-sidenav 
+     #drawer      
+     mode="push"
+     position="end" >
 
-<div class="toolbar">
-    <mat-toolbar style="background-color: transparent;">
-
-        
-        <mat-icon><img src="../../../assets/img/Logo.svg" alt="#" class="icon"></mat-icon>
-                <span style="margin-left: 0.3em ;" class="text" >
-                    Multiverse Horizon
-                </span>
-                    <div class="spacer"></div>
-                
-                        <button mat-button>Services</button>
-                        <button mat-button>text</button>
-                        <button mat-button>text</button>
-                   
-                    <div class="spacer"></div>
-                    <button mat-raised-button class="button text"> Get a Quote</button>
-
-    </mat-toolbar>
-</div>
+    
+     <mat-nav-list class="secondary-nav">
+       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 1</a>
+       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 2</a>
+       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 3</a>
+      </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
