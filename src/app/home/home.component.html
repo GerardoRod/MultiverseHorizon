@@ -1,20 +1,20 @@
-
-  <mat-grid-list cols=""  rowHeight="60vh" class="col">
-    <mat-grid-tile>
-        <section class="mat-typography">
+<div class="grid-container">
+  <mat-grid-list cols="2">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
             <div class="row">
-                <h2 class="mat-small mb">Translating your needs into products.</h2>
-                    <h1 class="mat-display-2 h__1">We make your business 
+                <h2 class="mat-h2 sub-head">Translating your needs into products.</h2>
+                    <h1 class="mat-display-1 h__1">We make your business 
                     <br>
                     available for the 
                     <br>
                     world.</h1>
                     <img src="../../assets/img/Vector_1.svg" alt="vector" class="line1">
             </div>
-            <button mat-raised-button color="primary" class="btn-c">Contact Us</button> 
-        </section>
+            <button *ngIf="!isSmallScreen"  mat-raised-button color="primary" class="btn-contact-us">Contact Us</button> 
     </mat-grid-tile>  
-    <mat-grid-tile>
+    <mat-grid-tile *ngIf="!isSmallScreen" >
         <img src="../../assets/img/img2.svg" alt="img1" class="img1">
-    </mat-grid-tile>
+        
+      </mat-grid-tile> 
   </mat-grid-list>
+</div>

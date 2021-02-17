@@ -1,50 +1,89 @@
-
-
-
-
-
-@media only screen and (min-width: 768px) {
-    body{
-      background-color: lightblue;
-    
-
+mat-grid-list{
+      padding: 0 1em 0 1em;
+      text-align: left;
     }
 
+    .sub-head{
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .h__1{
+
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+
+    .btn-contact-us{
+        display: none;
+    }
     
-  }
 
-.mb{
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 2.39vh;
-}
+    .line1{
+        width: 6.4em;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+    }
 
-.h__1{
 
-    text-transform: capitalize;
-    margin-bottom: 0;
-    font-size: 5.82vh;
-}
 
-.line1{
-    position: relative;
-    left: -0.6vh ;
-    top: -0.2vw;
-    width: 8vw;
-}
 
-.img1{
-   width:80%;
-   height: 80%;
-   padding-right: 10vw;
-}
 
-.btn-c{
-    margin-left: 10vw;
-    border-radius: 50px;
-    margin-top: 3vh;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3em;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    /* .image-hero, .img1{
+        display: none; 
+        position: absolute;
+        top: 14em;
+        right: 2em;
+        width: 34%;
+    } */
+    
+
+@media only screen and (min-width: 768px) {
+    mat-grid-list{
+     left: 3.4em;
+     display: block;
+    }
+
+
+   
+    .mb{
+        margin-bottom: -1.12;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 2.39vh;
+    }
+    
+    .h__1{
+    
+        text-transform: capitalize;
+        line-height: 1.2 ;
+        font-size: 5.82vh;
+    }
+    
+    .line1{
+        position: relative;
+        left: -0.6vh ;
+        top: -0.2vw;
+        width: 9vw;
+    }
+    
+    .img1{
+        display: unset;
+        right: 9em;
+        top: 12em;
+        width: 70%;
+        position: unset;
+        align-content: center;
+    }
+    
+    .btn-contact-us{
+        display: unset;
+        border-radius: 50px;
+        top: 7em;
+        padding: 0.3em 0.5em 0.3em 0.5em;
+        font-size: 1.3em;
+        right: 7em;
+        min-width: fit-content;
+    }
 }

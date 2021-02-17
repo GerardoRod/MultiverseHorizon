@@ -25,10 +25,21 @@
 
     
      <mat-nav-list class="secondary-nav">
-       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 1</a>
-       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 2</a>
-       <a mat-list-item routerLink="#" (click)="drawer.toggle()">Link 3</a>
+       <a mat-list-item routerLink="home" (click)="drawer.toggle()">Link 1</a>
+       <a mat-list-item routerLink="services" (click)="drawer.toggle()">Link 2</a>
+       <a mat-list-item routerLink="about" (click)="drawer.toggle()">About Us</a>
       </mat-nav-list>
     </mat-sidenav>
-      <router-outlet></router-outlet>
+    <section>
+      <app-home></app-home>
+    </section>
+    <section>
+        <app-sevices></app-sevices>
+      </section>
+      <section>
+        <app-about></app-about>
+      </section>
+      <section>
+        <app-contact-us></app-contact-us>
+      </section>
 </mat-sidenav-container>
