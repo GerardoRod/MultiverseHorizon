@@ -1,8 +1,18 @@
+
+
 .container{
     background-color: var( --light-accent);
+    padding: 1em;
+    padding-bottom: 50px;
 }
 
 h1{
     padding-top: 1.3em;
     text-align: center;
+    padding-bottom: 0.7em;
+
+}
+
+textarea{
+    min-height: 180px;
 }

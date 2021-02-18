@@ -1,11 +1,9 @@
+.container{
 
-
-
-mat-card{
-    background-color: transparent;
-    border-radius: 0;
-    
+    padding: 1em 1em 2em 1em;
 }
+
+
 
 h1{
     text-align: center;

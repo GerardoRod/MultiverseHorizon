@@ -1,31 +1,47 @@
-     <div class="container" fxLayout="row" fxLayoutGap="40px" fxLayout.xs="column">
+<div class="container" >            
+             
+        <h1>Let's Talk</h1>     
 
-             <h1>Let's Talk</h1>
-             
-             
-             <div fxLayout="column" fxFlex="100">
-                     <mat-form-field fxLayout appearance="outline">
-                             <mat-label>Email</mat-label>
-                             <input matInput>
+                <div    fxLayout.g="row" 
+                        fxLayoutGap="10px" 
+                        fxLayout.gt-sm="column"
+                        fxLayout.xs="column" >
+                        <div fxFlex="50" fxLayout="column">
+                                <div fxLayout="row"
+                                fxLayout.xs="column"
+                                fxLayoutGap="10px">
+                                <mat-form-field fxFlex="100"          
+                                                fxLayout.xs="column" 
+                                                appearance="outline">
+                                        <mat-label>Email</mat-label>
+                                        <input matInput>
+                                </mat-form-field>
+                        </div>
+                                
+                         <div fxLayout="row"
+                              fxLayoutGap="10px">
+                                
+                        <mat-form-field fxFlex="50" 
+                                appearance="outline">
+                                <mat-label>Name</mat-label>
+                                <input matInput>
                         </mat-form-field>    
-                </div>
-             <div fxLayout="column" fxFlex="50">
-                     <mat-form-field fxLayout appearance="outline">
-                             <mat-label>Name</mat-label>
-                             <input matInput>
+                        
+                        <mat-form-field 
+                                 fxFlex="50" 
+                                 appearance="outline">
+                                 <mat-label>Last Name</mat-label>
+                                 <input matInput>
                         </mat-form-field>    
+        </div>    
+
+                <mat-form-field fxFill appearance="outline">
+                        <mat-label>Explain your business Idea.</mat-label>
+                        <textarea matInput></textarea>
+                </mat-form-field>   
+                                
                 </div>
-             <div fxLayout="row" fxFlex="50">
-                     <mat-form-field fxLayout appearance="outline">
-                             <mat-label>Last Name</mat-label>
-                             <input matInput>
-                        </mat-form-field>    
-                </div>
-             <div fxLayout="column" fxFlex="100">
-                     <mat-form-field fxLayout appearance="outline">
-                             <mat-label>Explain your business Idea.</mat-label>
-                             <input matInput>
-                        </mat-form-field>    
-                </div>
-                
-    </div>          
+        </div>
+</div>
+
+          

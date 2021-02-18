@@ -1,8 +1,11 @@
-
+mat-tab-group{
+    margin-top: 1em;
+}
 
 mat-card{
     border-radius: 0;
     background-color:#651fff;
     color: rgba(214, 214, 214, 0.898);
     min-height: 180px;
+    padding-bottom: 2em;
 }
