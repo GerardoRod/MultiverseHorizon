@@ -1,47 +1,40 @@
-<div class="container" >            
-             
-        <h1>Let's Talk</h1>     
+<form [formGroup]="myForm" (ngSubmit)="send()">
 
-                <div    fxLayout.g="row" 
-                        fxLayoutGap="10px" 
-                        fxLayout.gt-sm="column"
-                        fxLayout.xs="column" >
-                        <div fxFlex="50" fxLayout="column">
-                                <div fxLayout="row"
-                                fxLayout.xs="column"
-                                fxLayoutGap="10px">
-                                <mat-form-field fxFlex="100"          
-                                                fxLayout.xs="column" 
-                                                appearance="outline">
-                                        <mat-label>Email</mat-label>
-                                        <input matInput>
-                                </mat-form-field>
-                        </div>
-                                
-                         <div fxLayout="row"
-                              fxLayoutGap="10px">
-                                
-                        <mat-form-field fxFlex="50" 
-                                appearance="outline">
-                                <mat-label>Name</mat-label>
-                                <input matInput>
-                        </mat-form-field>    
+        <h1>Let's Talk</h1>
+
+        <div fxLayout.g="row" fxLayout.gt-sm="column" fxLayout.xs="column">
+
+                <div fxFlex="50" fxLayout="column">
                         
-                        <mat-form-field 
-                                 fxFlex="50" 
-                                 appearance="outline">
-                                 <mat-label>Last Name</mat-label>
-                                 <input matInput>
-                        </mat-form-field>    
-        </div>    
-
-                <mat-form-field fxFill appearance="outline">
-                        <mat-label>Explain your business Idea.</mat-label>
-                        <textarea matInput></textarea>
-                </mat-form-field>   
+                                <mat-form-field fxFlex="100" fxLayout.xs="column" appearance="outline">
+                                        <mat-label>Email</mat-label>
+                                        <input matInput formControlName="email">
+                                        <mat-error *ngIf="fieldIsValid('email')">{{ getErrorMessage('email') }}</mat-error>
+                                </mat-form-field>
                                 
+                                <div fxLayout="row" fxLayoutGap="10px">
+                                        
+                                        <mat-form-field fxFlex="50" appearance="outline">
+                                                <mat-label>Name</mat-label>
+                                                <input matInput formControlName="name">
+                                                <mat-error *ngIf="fieldIsValid('name')">{{ getErrorMessage('name') }}</mat-error>
+                                        </mat-form-field>
+                                        
+                                        <mat-form-field fxFlex="50" appearance="outline">
+                                                <mat-label>Last Name</mat-label>
+                                                <input matInput formControlName="lastname">
+                                                <mat-error *ngIf="fieldIsValid('lastname')">{{ getErrorMessage('lastname') }}</mat-error>
+
+                                        </mat-form-field>
+                                </div>
+
+                        <mat-form-field fxFill appearance="outline">
+                                <mat-label>Explain your business Idea.</mat-label>
+                                <textarea matInput formControlName="description"></textarea>
+                                <mat-error *ngIf="fieldIsValid('description')">{{ getErrorMessage('description') }}</mat-error>
+
+                        </mat-form-field>
+                        <button mat-raised-button color="primary" type="submit">Enviar</button>
                 </div>
         </div>
-</div>
-
-          
+</form>
