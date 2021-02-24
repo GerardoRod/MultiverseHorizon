@@ -6,7 +6,7 @@
 
                 <div fxFlex="50" fxLayout="column">
                         
-                                <mat-form-field fxFlex="100" fxLayout.xs="column" appearance="outline">
+                                <mat-form-field fxFlex="100" fxLayout.xs="column" appearance="outline" >
                                         <mat-label>Email</mat-label>
                                         <input matInput formControlName="email">
                                         <mat-error *ngIf="fieldIsValid('email')">{{ getErrorMessage('email') }}</mat-error>

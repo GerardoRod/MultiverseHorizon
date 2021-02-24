@@ -28,22 +28,21 @@ export class ContactUsComponent implements OnInit {
   }
 
   fieldIsValid( field: string){
-    return this.myForm.controls[field].errors && this.myForm.controls[field].touched
+    return this.myForm.controls[field].errors && this.myForm.controls[field].touched;
   }
 
   getErrorMessage(field: string) {
-
-
     if (this.myForm.controls[field].hasError('required')) {
       return 'You must enter a value';
     }
-
     return this.myForm.controls[field].hasError('email') ? 'Not a valid email' : '';
   }
 
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    
+    
   }
 
 }
