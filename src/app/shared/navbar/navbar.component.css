@@ -1,23 +1,80 @@
-.toolbar{
-    /* Horizon Flow */
-min-width: fit-content;
-margin-left: 8vw;
-padding-top: 3em;
-margin-right: 8vw;
+
+mat-toolbar{
+    place-content: space-between;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
 }
-
-
-.button{
-    font-size: 0.8em;
-    border-radius: 50px;
-    min-width: fit-content;
-}
-
-.icon{
-    width: 20px;
-    height: 20px;
-}
-
-.text{
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
     color:#651fff
+} 
+
+.primary-nav, .nav-btn-cta{
+    display: none;
+}
+
+mat-nav-list.secondary-nav {
+
+ 
+    width: 66vw ;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+
+}
+
+mat-nav-list.secondary-nav a{
+
+    color: white; 
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.3em;
+
+} 
+
+mat-nav-list.secondary-nav a:hover{
+
+    font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    mat-toolbar{
+
+        padding: 0 8% 0 8%;
+    }
+
+    mat-toolbar  mat-nav-list{
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+
+    }
+
+
+
+    .nav-btn-cta{
+        display: flex;
+        font-weight: medium;
+        border-radius: 5em;
+    }
+    .nav-btn-cta:hover {
+        display: flex;
+        color:black;
+        font-weight: bold;
+        border-radius: 5em;
+    }
+
+    mat-nav-list .primary-nav a{
+        position: absolute;
+    }
+
 }

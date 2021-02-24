@@ -1,8 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    
+--primary:#5A2478;
+--light-accent: #818BAD;
+--light-shades: #F5F6F4;
+--success: #F5F6F4;
+--dark-accent:#AF4C60;
+--dark-shades:#1C121C;
+--info: #50855C;
+}
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins', sans-serif;
     background-image:url(assets/img/so-white.png);
+
     
  }
 

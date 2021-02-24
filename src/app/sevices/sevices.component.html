@@ -1,0 +1,13 @@
+    <mat-tab-group backgroundColor="primary">
+        <mat-tab *ngFor="let link of links">
+            <ng-template mat-tab-label >
+                <mat-icon class="tab-icon">{{link.icon}}</mat-icon>
+                {{link.template}}
+            </ng-template>   
+            <mat-card>
+                <mat-card-content>
+                    {{link.content}}
+                </mat-card-content>	         
+            </mat-card>
+        </mat-tab> 
+    </mat-tab-group>
